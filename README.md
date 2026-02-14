@@ -40,7 +40,5 @@ This project involves analyzing raw coffee sales data to derive actionable busin
 ---
 
 ## 📁 Files
-- `orders`: The main transactional data table.
-- `customers`: Customer mapping table.
-- `products`: Product details and pricing table.
-- `Dashboard`: The final interactive visual report.
+- `coffeeOrdersData.xlsx`: Raw order data.
+- `coffeeOrdersProject.xlsx`: The final interactive visual report.
