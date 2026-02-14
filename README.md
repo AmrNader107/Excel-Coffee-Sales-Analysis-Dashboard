@@ -1,6 +1,6 @@
 # Coffee Sales Data Analysis Dashboard
 
-## Project Overview
+## 📊 Project Overview
 
 This project involves analyzing raw coffee sales data to derive actionable business insights. Using **Microsoft Excel**, I transformed raw data into an interactive dashboard that allows stakeholders to visualize sales performance by region, product type, and customer demographics.
 
@@ -10,30 +10,37 @@ This project involves analyzing raw coffee sales data to derive actionable busin
 <img width="1919" height="960" alt="Screenshot 2026-02-06 172505" src="https://github.com/user-attachments/assets/88f15ea3-d209-4989-918e-82a9c7c08a2b" />
 
 
-## Key Features & Interactivity
+## 🛠️ Techniques & Formulas Used
 
-- **Dynamic Filtering**: Users can filter the entire dashboard by Roast Type, Size, or Loyalty Card status using Slicers.
+### 1. Data Gathering & Transformation
+* **Connecting Tables:** Imported raw data from multiple CSV files into Excel.
+* **Data Lookup (`XLOOKUP`):** Used to bring in customer details (name, email, country) into the main orders table [00:05:00].
+* **Data Lookup (`INDEX`/`MATCH`):** Utilized for dynamic lookup of product information (type, roast, price), allowing one formula to populate multiple columns [00:11:42].
+* **Data Cleaning (`IF` functions):** Used nested `IF` statements to convert abbreviated data (e.g., 'Rob') into full descriptive names (e.g., 'Robusta') [00:18:51].
+* **Formatting:** Applied custom date formats and currency formatting ($) for better readability [00:21:18].
 
-- **Time Series Analysis**: A Timeline slicer allows for filtering sales data by specific months or years.
+### 2. Data Modeling & Analysis
+* **Excel Tables (`Ctrl+T`):** Converted raw data ranges into Excel Tables to ensure dynamic updating of charts when new data is added [00:25:02].
+* **Pivot Tables:** Created pivot tables to summarize sales data by time, product type, country, and customer [00:26:52].
+* **Grouping:** Grouped raw dates into months and years for trend analysis [00:27:40].
 
-- **Consolidated Data**: Used XLOOKUP to merge data from Orders, Customers, and Products tables into a single analysis table.
+### 3. Visualization & Dashboarding
+* **Pivot Charts:** Created line charts for temporal trends and bar charts for categorical comparisons [00:29:01].
+* **Interactivity:** Added **Slicers** (for roast type, size, loyalty card) and a **Timeline** to make the dashboard dynamic [00:32:04].
+* **Dashboard Layout:** Compiled all visuals onto a single sheet, formatted with custom colors and shapes [00:50:05].
+* **Report Connections:** Linked slicers and timelines to all pivot tables so that one selection filters the entire dashboard [00:52:17].
 
+---
 
-## Data Processing Steps
+## 🚀 Key Dashboard Features
+- **Dynamic Timeline:** Analyze sales performance over specific months or years.
+- **Roast & Size Filters:** Segment sales data based on roast type (Light, Medium, Dark) and package size.
+- **Loyalty Program Analysis:** Instantly compare purchasing behavior between loyalty card holders and non-holders.
 
-- **Data Cleaning**: Cleaned raw data by handling missing values with IF functions and removing duplicates.
+---
 
-- **Data Transformation**: Created formatted Excel tables to allow for dynamic data updates.
-
-- **Data Modeling**: Linked datasets using INDEX & MATCH to create a cohesive data model for analysis.
-
-- **Visualization**: Built Pivot Charts (Line and Bar) to represent trends.
-
-
-## Insights Derived
-
-- Top-performing product category based on total revenue.
-
-- Regional sales disparities.
-
-- Peak purchasing times based on loyalty status.
+## 📁 Project Structure
+- `orders`: The main transactional data table.
+- `customers`: Customer mapping table.
+- `products`: Product details and pricing table.
+- `Dashboard`: The final interactive visual report.
