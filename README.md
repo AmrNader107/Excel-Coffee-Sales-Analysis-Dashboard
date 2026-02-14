@@ -14,21 +14,21 @@ This project involves analyzing raw coffee sales data to derive actionable busin
 
 ### 1. Data Gathering & Transformation
 * **Connecting Tables:** Imported raw data from multiple CSV files into Excel.
-* **Data Lookup (`XLOOKUP`):** Used to bring in customer details (name, email, country) into the main orders table [00:05:00].
-* **Data Lookup (`INDEX`/`MATCH`):** Utilized for dynamic lookup of product information (type, roast, price), allowing one formula to populate multiple columns [00:11:42].
-* **Data Cleaning (`IF` functions):** Used nested `IF` statements to convert abbreviated data (e.g., 'Rob') into full descriptive names (e.g., 'Robusta') [00:18:51].
-* **Formatting:** Applied custom date formats and currency formatting ($) for better readability [00:21:18].
+* **Data Lookup (`XLOOKUP`):** Used to bring in customer details (name, email, country) into the main orders table.
+* **Data Lookup (`INDEX`/`MATCH`):** Utilized for dynamic lookup of product information (type, roast, price), allowing one formula to populate multiple columns.
+* **Data Cleaning (`IF` functions):** Used nested `IF` statements to convert abbreviated data (e.g., 'Rob') into full descriptive names (e.g., 'Robusta').
+* **Formatting:** Applied custom date formats and currency formatting ($) for better readability.
 
 ### 2. Data Modeling & Analysis
-* **Excel Tables (`Ctrl+T`):** Converted raw data ranges into Excel Tables to ensure dynamic updating of charts when new data is added [00:25:02].
-* **Pivot Tables:** Created pivot tables to summarize sales data by time, product type, country, and customer [00:26:52].
-* **Grouping:** Grouped raw dates into months and years for trend analysis [00:27:40].
+* **Excel Tables (`Ctrl+T`):** Converted raw data ranges into Excel Tables to ensure dynamic updating of charts when new data is added.
+* **Pivot Tables:** Created pivot tables to summarize sales data by time, product type, country, and customer.
+* **Grouping:** Grouped raw dates into months and years for trend analysis.
 
 ### 3. Visualization & Dashboarding
-* **Pivot Charts:** Created line charts for temporal trends and bar charts for categorical comparisons [00:29:01].
-* **Interactivity:** Added **Slicers** (for roast type, size, loyalty card) and a **Timeline** to make the dashboard dynamic [00:32:04].
-* **Dashboard Layout:** Compiled all visuals onto a single sheet, formatted with custom colors and shapes [00:50:05].
-* **Report Connections:** Linked slicers and timelines to all pivot tables so that one selection filters the entire dashboard [00:52:17].
+* **Pivot Charts:** Created line charts for temporal trends and bar charts for categorical comparisons.
+* **Interactivity:** Added **Slicers** (for roast type, size, loyalty card) and a **Timeline** to make the dashboard dynamic.
+* **Dashboard Layout:** Compiled all visuals onto a single sheet, formatted with custom colors and shapes.
+* **Report Connections:** Linked slicers and timelines to all pivot tables so that one selection filters the entire dashboard.
 
 ---
 
@@ -39,7 +39,7 @@ This project involves analyzing raw coffee sales data to derive actionable busin
 
 ---
 
-## 📁 Project Structure
+## 📁 Files
 - `orders`: The main transactional data table.
 - `customers`: Customer mapping table.
 - `products`: Product details and pricing table.
